@@ -2296,6 +2296,7 @@ EditorInspector::EditorInspector() {
 	add_child(main_vbox);
 	set_enable_h_scroll(false);
 	set_enable_v_scroll(true);
+	set_follow_focus(true);
 
 	show_categories = false;
 	hide_script = true;
