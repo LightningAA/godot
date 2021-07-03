@@ -382,7 +382,7 @@ void EditorPropertyArray::update_property() {
 
 void EditorPropertyArray::_remove_pressed(int p_index) {
 	Variant array = object->get_array();
-	array.call("remove", p_index);
+	array.call("remove_at", p_index);
 
 	if (array.get_type() == Variant::ARRAY) {
 		array = array.call("duplicate");
